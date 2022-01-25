@@ -5,10 +5,11 @@ variables:
   buildConfiguration: 'Release'
   webRepository: 'web'
   tag: '$(Build.BuildId)'
+
 stages:
 - stage: 'Build'
   displayName: 'Build and push'
-  jobs:  
+  jobs:
   - job: 'Build'
     displayName: 'Build job'
     pool:
